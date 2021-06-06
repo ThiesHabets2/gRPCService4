@@ -1,0 +1,446 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{79675DD0-34D0-434E-9129-F3137C11C49A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>gRPCService4</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GrpcService1\GrpcService1.sln" />
+    <Content Include="GrpcService2\GrpcService2.sln" />
+    <Content Include="GrpcService3\GrpcService3.sln" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Google.Protobuf.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.ClientFactory.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.dll" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.exe" />
+    <Content Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.pdb" />
+    <Content Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\apphost.exe" />
+    <Content Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.csproj.FileListAbsolute.txt" />
+    <Content Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.dll" />
+    <Content Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.pdb" />
+    <Content Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\staticwebassets\GrpcService3.StaticWebAssets.xml" />
+    <Content Include="ThiesHabets2\gRPCService3\.git\ms-persist.xml" />
+    <Content Include="ThiesHabets\GrpcService1\.git\ms-persist.xml" />
+    <Content Include="ThiesHabets\GrpcService1\GrpcService1.sln" />
+    <Content Include="ThiesHabets\GrpcService2\.git\ms-persist.xml" />
+    <Content Include="ThiesHabets\GrpcService2\GrpcService2.sln" />
+    <Content Include="ThiesHabets\GrpcService3\.git\ms-persist.xml" />
+    <Content Include="ThiesHabets\GrpcService3\GrpcService3.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GrpcService1\GrpcService1\appsettings.Development.json" />
+    <None Include="GrpcService1\GrpcService1\appsettings.json" />
+    <None Include="GrpcService1\GrpcService1\GrpcService1.csproj" />
+    <None Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\12fbc7ffe642ca7e_greet.protodep" />
+    <None Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.AssemblyInfoInputs.cache" />
+    <None Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.assets.cache" />
+    <None Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.csproj.AssemblyReference.cache" />
+    <None Include="GrpcService1\GrpcService1\obj\GrpcService1.csproj.nuget.dgspec.json" />
+    <None Include="GrpcService1\GrpcService1\obj\GrpcService1.csproj.nuget.g.props" />
+    <None Include="GrpcService1\GrpcService1\obj\GrpcService1.csproj.nuget.g.targets" />
+    <None Include="GrpcService1\GrpcService1\obj\project.assets.json" />
+    <None Include="GrpcService1\GrpcService1\obj\project.nuget.cache" />
+    <None Include="GrpcService1\GrpcService1\Properties\launchSettings.json" />
+    <None Include="GrpcService1\GrpcService1\Protos\greet.proto" />
+    <None Include="GrpcService2\.gitattributes" />
+    <None Include="GrpcService2\.gitignore" />
+    <None Include="GrpcService2\GrpcService2\appsettings.Development.json" />
+    <None Include="GrpcService2\GrpcService2\appsettings.json" />
+    <None Include="GrpcService2\GrpcService2\GrpcService2.csproj" />
+    <None Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\12fbc7ffe642ca7e_greet.protodep" />
+    <None Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.AssemblyInfoInputs.cache" />
+    <None Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.assets.cache" />
+    <None Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.csproj.AssemblyReference.cache" />
+    <None Include="GrpcService2\GrpcService2\obj\GrpcService2.csproj.nuget.dgspec.json" />
+    <None Include="GrpcService2\GrpcService2\obj\GrpcService2.csproj.nuget.g.props" />
+    <None Include="GrpcService2\GrpcService2\obj\GrpcService2.csproj.nuget.g.targets" />
+    <None Include="GrpcService2\GrpcService2\obj\project.assets.json" />
+    <None Include="GrpcService2\GrpcService2\obj\project.nuget.cache" />
+    <None Include="GrpcService2\GrpcService2\Properties\launchSettings.json" />
+    <None Include="GrpcService2\GrpcService2\Protos\greet.proto" />
+    <None Include="GrpcService3\.gitattributes" />
+    <None Include="GrpcService3\.gitignore" />
+    <None Include="GrpcService3\GrpcService3\appsettings.Development.json" />
+    <None Include="GrpcService3\GrpcService3\appsettings.json" />
+    <None Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <None Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\appsettings.json" />
+    <None Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.deps.json" />
+    <None Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.runtimeconfig.dev.json" />
+    <None Include="GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\GrpcService3.runtimeconfig.json" />
+    <None Include="GrpcService3\GrpcService3\GrpcService3.csproj" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\12fbc7ffe642ca7e_greet.protodep" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.AssemblyInfoInputs.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.assets.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.csproj.AssemblyReference.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.csproj.CopyComplete" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.csproj.CoreCompileInputs.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.genruntimeconfig.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.RazorTargetAssemblyInfo.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\staticwebassets\GrpcService3.StaticWebAssets.Manifest.cache" />
+    <None Include="GrpcService3\GrpcService3\obj\GrpcService3.csproj.nuget.dgspec.json" />
+    <None Include="GrpcService3\GrpcService3\obj\GrpcService3.csproj.nuget.g.props" />
+    <None Include="GrpcService3\GrpcService3\obj\GrpcService3.csproj.nuget.g.targets" />
+    <None Include="GrpcService3\GrpcService3\obj\project.assets.json" />
+    <None Include="GrpcService3\GrpcService3\obj\project.nuget.cache" />
+    <None Include="GrpcService3\GrpcService3\Properties\launchSettings.json" />
+    <None Include="GrpcService3\GrpcService3\Protos\greet.proto" />
+    <None Include="NewRepo2\.gitattributes" />
+    <None Include="NewRepo2\.gitignore" />
+    <None Include="NewRepo2\.vs\NewRepo2\v16\.suo" />
+    <None Include="NewRepo2\.vs\ProjectSettings.json" />
+    <None Include="NewRepo2\.vs\slnx.sqlite" />
+    <None Include="NewRepo2\.vs\VSWorkspaceState.json" />
+    <None Include="NewRepo\.gitattributes" />
+    <None Include="NewRepo\.gitignore" />
+    <None Include="NewRepo\.vs\ProjectSettings.json" />
+    <None Include="NewRepo\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets2\GrpcService2\.git\config" />
+    <None Include="ThiesHabets2\GrpcService2\.git\description" />
+    <None Include="ThiesHabets2\GrpcService2\.git\HEAD" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\hooks\update.sample" />
+    <None Include="ThiesHabets2\GrpcService2\.git\index" />
+    <None Include="ThiesHabets2\GrpcService2\.git\info\exclude" />
+    <None Include="ThiesHabets2\GrpcService2\.git\logs\HEAD" />
+    <None Include="ThiesHabets2\GrpcService2\.git\logs\refs\heads\main" />
+    <None Include="ThiesHabets2\GrpcService2\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets2\GrpcService2\.git\objects\pack\pack-c776b5d7d03b0273e1f719265744c6ec1fb08e0f.idx" />
+    <None Include="ThiesHabets2\GrpcService2\.git\objects\pack\pack-c776b5d7d03b0273e1f719265744c6ec1fb08e0f.pack" />
+    <None Include="ThiesHabets2\GrpcService2\.git\packed-refs" />
+    <None Include="ThiesHabets2\GrpcService2\.git\refs\heads\main" />
+    <None Include="ThiesHabets2\GrpcService2\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets2\GrpcService2\.vs\GrpcService2\v16\.suo" />
+    <None Include="ThiesHabets2\GrpcService2\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets2\GrpcService2\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets2\GrpcService2\.vs\VSWorkspaceState.json" />
+    <None Include="ThiesHabets2\GrpcService2\LICENSE" />
+    <None Include="ThiesHabets2\gRPCService3\.gitignore" />
+    <None Include="ThiesHabets2\gRPCService3\.git\COMMIT_EDITMSG" />
+    <None Include="ThiesHabets2\gRPCService3\.git\config" />
+    <None Include="ThiesHabets2\gRPCService3\.git\description" />
+    <None Include="ThiesHabets2\gRPCService3\.git\FETCH_HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\hooks\update.sample" />
+    <None Include="ThiesHabets2\gRPCService3\.git\index" />
+    <None Include="ThiesHabets2\gRPCService3\.git\info\exclude" />
+    <None Include="ThiesHabets2\gRPCService3\.git\logs\HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\logs\refs\heads\main" />
+    <None Include="ThiesHabets2\gRPCService3\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\logs\refs\remotes\origin\main" />
+    <None Include="ThiesHabets2\gRPCService3\.git\logs\refs\remotes\origin\ThiesHabets-patch-1" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\0d\a3abe4ad3aec00b345dfa3e610bfcce438fa5e" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\3d\20314a2bfc25b46c13e95740ba8fbf62c2c781" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\4d\897d72a060510234dd4d31a9595ffccf15d97d" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\60\1ac0c13179a26028d0fbaa9a0d8e98d3ef06f7" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\61\0464fd39cedd60589978d5391c705893c3d039" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\6b\6114114f4e89a1f2d0e911ff090e541af1260c" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\72\899d1ba1d1840dbab22834ec708ddc7d89e419" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\76\f39f1bd53d05bf1599a2e811f616dd70693006" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\90\7e0183fdd0d58a05322e582b5d92e05f4a6ab7" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\a1\9b3e5d954b0f738adc78b956f33deaa6ae01c9" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\ae\e97cd019f819504b90e173e34c1a190b782754" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\e2\78aa7b94d577f0321e6cf5b3b49ccf4ad4cf43" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\e9\ab3636e876e38d3308c8c5107566e7a2d288af" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\f8\b4888565caadc7510be75682268d6c18edd6de" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\pack\pack-fbf98fce9237bc46ab79e531761737722d9dcc05.idx" />
+    <None Include="ThiesHabets2\gRPCService3\.git\objects\pack\pack-fbf98fce9237bc46ab79e531761737722d9dcc05.pack" />
+    <None Include="ThiesHabets2\gRPCService3\.git\ORIG_HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\packed-refs" />
+    <None Include="ThiesHabets2\gRPCService3\.git\refs\heads\main" />
+    <None Include="ThiesHabets2\gRPCService3\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets2\gRPCService3\.git\refs\remotes\origin\main" />
+    <None Include="ThiesHabets2\gRPCService3\.git\refs\remotes\origin\ThiesHabets-patch-1" />
+    <None Include="ThiesHabets2\gRPCService3\.vs\gRPCService3\v16\.suo" />
+    <None Include="ThiesHabets2\gRPCService3\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets2\gRPCService3\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets2\gRPCService3\.vs\VSWorkspaceState.json" />
+    <None Include="ThiesHabets2\gRPCService3\README.md" />
+    <None Include="ThiesHabets\GrpcService1\.gitattributes" />
+    <None Include="ThiesHabets\GrpcService1\.gitignore" />
+    <None Include="ThiesHabets\GrpcService1\.git\config" />
+    <None Include="ThiesHabets\GrpcService1\.git\description" />
+    <None Include="ThiesHabets\GrpcService1\.git\FETCH_HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.git\HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\hooks\update.sample" />
+    <None Include="ThiesHabets\GrpcService1\.git\index" />
+    <None Include="ThiesHabets\GrpcService1\.git\info\exclude" />
+    <None Include="ThiesHabets\GrpcService1\.git\logs\HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.git\logs\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService1\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.git\objects\pack\pack-e112b6b766d27f511d36fe438768a57a35f0c5bd.idx" />
+    <None Include="ThiesHabets\GrpcService1\.git\objects\pack\pack-e112b6b766d27f511d36fe438768a57a35f0c5bd.pack" />
+    <None Include="ThiesHabets\GrpcService1\.git\ORIG_HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.git\packed-refs" />
+    <None Include="ThiesHabets\GrpcService1\.git\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService1\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService1\.vs\GrpcService1\v16\.suo" />
+    <None Include="ThiesHabets\GrpcService1\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets\GrpcService1\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets\GrpcService1\.vs\VSWorkspaceState.json" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\appsettings.Development.json" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\appsettings.json" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\GrpcService1.csproj" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.csproj.AssemblyReference.cache" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\obj\Release\netcoreapp3.1\GrpcService1.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\Properties\launchSettings.json" />
+    <None Include="ThiesHabets\GrpcService1\GrpcService1\Protos\greet.proto" />
+    <None Include="ThiesHabets\GrpcService2\.gitattributes" />
+    <None Include="ThiesHabets\GrpcService2\.gitignore" />
+    <None Include="ThiesHabets\GrpcService2\.git\config" />
+    <None Include="ThiesHabets\GrpcService2\.git\description" />
+    <None Include="ThiesHabets\GrpcService2\.git\HEAD" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\hooks\update.sample" />
+    <None Include="ThiesHabets\GrpcService2\.git\index" />
+    <None Include="ThiesHabets\GrpcService2\.git\info\exclude" />
+    <None Include="ThiesHabets\GrpcService2\.git\logs\HEAD" />
+    <None Include="ThiesHabets\GrpcService2\.git\logs\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService2\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService2\.git\objects\pack\pack-4dcbe04e81b4e7808e6b0a1c9836ef9761ce4260.idx" />
+    <None Include="ThiesHabets\GrpcService2\.git\objects\pack\pack-4dcbe04e81b4e7808e6b0a1c9836ef9761ce4260.pack" />
+    <None Include="ThiesHabets\GrpcService2\.git\ORIG_HEAD" />
+    <None Include="ThiesHabets\GrpcService2\.git\packed-refs" />
+    <None Include="ThiesHabets\GrpcService2\.git\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService2\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService2\.vs\GrpcService2\v16\.suo" />
+    <None Include="ThiesHabets\GrpcService2\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets\GrpcService2\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets\GrpcService2\.vs\VSWorkspaceState.json" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\appsettings.Development.json" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\appsettings.json" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\GrpcService2.csproj" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.csproj.AssemblyReference.cache" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\obj\Release\netcoreapp3.1\GrpcService2.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\Properties\launchSettings.json" />
+    <None Include="ThiesHabets\GrpcService2\GrpcService2\Protos\greet.proto" />
+    <None Include="ThiesHabets\GrpcService3\.gitattributes" />
+    <None Include="ThiesHabets\GrpcService3\.gitignore" />
+    <None Include="ThiesHabets\GrpcService3\.git\config" />
+    <None Include="ThiesHabets\GrpcService3\.git\description" />
+    <None Include="ThiesHabets\GrpcService3\.git\FETCH_HEAD" />
+    <None Include="ThiesHabets\GrpcService3\.git\HEAD" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\hooks\update.sample" />
+    <None Include="ThiesHabets\GrpcService3\.git\index" />
+    <None Include="ThiesHabets\GrpcService3\.git\info\exclude" />
+    <None Include="ThiesHabets\GrpcService3\.git\logs\HEAD" />
+    <None Include="ThiesHabets\GrpcService3\.git\logs\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService3\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService3\.git\objects\pack\pack-47c1cb1365ea529ee887cf4d2b0eec893fa8957d.idx" />
+    <None Include="ThiesHabets\GrpcService3\.git\objects\pack\pack-47c1cb1365ea529ee887cf4d2b0eec893fa8957d.pack" />
+    <None Include="ThiesHabets\GrpcService3\.git\packed-refs" />
+    <None Include="ThiesHabets\GrpcService3\.git\refs\heads\master" />
+    <None Include="ThiesHabets\GrpcService3\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\GrpcService3\.vs\GrpcService3\v16\.suo" />
+    <None Include="ThiesHabets\GrpcService3\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets\GrpcService3\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets\GrpcService3\.vs\VSWorkspaceState.json" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\appsettings.Development.json" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\appsettings.json" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\GrpcService3.csproj" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.csproj.AssemblyReference.cache" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\obj\Release\netcoreapp3.1\GrpcService3.AssemblyInfoInputs.cache" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\Properties\launchSettings.json" />
+    <None Include="ThiesHabets\GrpcService3\GrpcService3\Protos\greet.proto" />
+    <None Include="ThiesHabets\NewRepo2\.gitattributes" />
+    <None Include="ThiesHabets\NewRepo2\.gitignore" />
+    <None Include="ThiesHabets\NewRepo2\.git\config" />
+    <None Include="ThiesHabets\NewRepo2\.git\description" />
+    <None Include="ThiesHabets\NewRepo2\.git\HEAD" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\applypatch-msg.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\commit-msg.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\post-update.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-applypatch.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-commit.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-push.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-rebase.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\pre-receive.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\hooks\update.sample" />
+    <None Include="ThiesHabets\NewRepo2\.git\index" />
+    <None Include="ThiesHabets\NewRepo2\.git\info\exclude" />
+    <None Include="ThiesHabets\NewRepo2\.git\logs\HEAD" />
+    <None Include="ThiesHabets\NewRepo2\.git\logs\refs\heads\master" />
+    <None Include="ThiesHabets\NewRepo2\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\NewRepo2\.git\objects\pack\pack-951867cf3343a2fd8e3423b7ac66998d91a9d0f4.idx" />
+    <None Include="ThiesHabets\NewRepo2\.git\objects\pack\pack-951867cf3343a2fd8e3423b7ac66998d91a9d0f4.pack" />
+    <None Include="ThiesHabets\NewRepo2\.git\packed-refs" />
+    <None Include="ThiesHabets\NewRepo2\.git\refs\heads\master" />
+    <None Include="ThiesHabets\NewRepo2\.git\refs\remotes\origin\HEAD" />
+    <None Include="ThiesHabets\NewRepo2\.vs\NewRepo2\v16\.suo" />
+    <None Include="ThiesHabets\NewRepo2\.vs\ProjectSettings.json" />
+    <None Include="ThiesHabets\NewRepo2\.vs\slnx.sqlite" />
+    <None Include="ThiesHabets\NewRepo2\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\Greet.cs" />
+    <Compile Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GreetGrpc.cs" />
+    <Compile Include="GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.AssemblyInfo.cs" />
+    <Compile Include="GrpcService1\GrpcService1\Program.cs" />
+    <Compile Include="GrpcService1\GrpcService1\Services\GreeterService.cs" />
+    <Compile Include="GrpcService1\GrpcService1\Startup.cs" />
+    <Compile Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\Greet.cs" />
+    <Compile Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GreetGrpc.cs" />
+    <Compile Include="GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.AssemblyInfo.cs" />
+    <Compile Include="GrpcService2\GrpcService2\Program.cs" />
+    <Compile Include="GrpcService2\GrpcService2\Services\GreeterService.cs" />
+    <Compile Include="GrpcService2\GrpcService2\Startup.cs" />
+    <Compile Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\Greet.cs" />
+    <Compile Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GreetGrpc.cs" />
+    <Compile Include="GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.AssemblyInfo.cs" />
+    <Compile Include="GrpcService3\GrpcService3\Program.cs" />
+    <Compile Include="GrpcService3\GrpcService3\Services\GreeterService.cs" />
+    <Compile Include="GrpcService3\GrpcService3\Startup.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\obj\Debug\netcoreapp3.1\GrpcService1.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\obj\Release\netcoreapp3.1\GrpcService1.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\Program.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\Services\GreeterService.cs" />
+    <Compile Include="ThiesHabets\GrpcService1\GrpcService1\Startup.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\obj\Debug\netcoreapp3.1\GrpcService2.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\obj\Release\netcoreapp3.1\GrpcService2.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\Program.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\Services\GreeterService.cs" />
+    <Compile Include="ThiesHabets\GrpcService2\GrpcService2\Startup.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\obj\Debug\netcoreapp3.1\GrpcService3.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\obj\Release\netcoreapp3.1\GrpcService3.AssemblyInfo.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\Program.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\Services\GreeterService.cs" />
+    <Compile Include="ThiesHabets\GrpcService3\GrpcService3\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GrpcService1\GrpcService1\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="GrpcService2\GrpcService2\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="index.html\" />
+    <Folder Include="ThiesHabets2\GrpcService2\.git\objects\info\" />
+    <Folder Include="ThiesHabets2\GrpcService2\.git\refs\tags\" />
+    <Folder Include="ThiesHabets2\gRPCService3\.git\objects\info\" />
+    <Folder Include="ThiesHabets2\gRPCService3\.git\refs\tags\" />
+    <Folder Include="ThiesHabets\GrpcService1\.git\objects\info\" />
+    <Folder Include="ThiesHabets\GrpcService1\.git\refs\tags\" />
+    <Folder Include="ThiesHabets\GrpcService1\GrpcService1\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\GrpcService1\GrpcService1\bin\Release\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\GrpcService2\.git\objects\info\" />
+    <Folder Include="ThiesHabets\GrpcService2\.git\refs\tags\" />
+    <Folder Include="ThiesHabets\GrpcService2\GrpcService2\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\GrpcService2\GrpcService2\bin\Release\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\GrpcService3\.git\objects\info\" />
+    <Folder Include="ThiesHabets\GrpcService3\.git\refs\tags\" />
+    <Folder Include="ThiesHabets\GrpcService3\GrpcService3\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\GrpcService3\GrpcService3\bin\Release\netcoreapp3.1\" />
+    <Folder Include="ThiesHabets\NewRepo2\.git\objects\info\" />
+    <Folder Include="ThiesHabets\NewRepo2\.git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
